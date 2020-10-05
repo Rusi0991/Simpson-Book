@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y4H-c7-WxB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y4H-c7-WxB">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17124"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -69,14 +69,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fA-Jo-46N">
+                                <rect key="frame" x="37" y="687" width="340" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="QsR-nm-pTx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rel-r6-1AF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="QHE-P4-zgF" firstAttribute="leading" secondItem="jbE-qa-GLY" secondAttribute="leading" id="7xy-eL-TeN"/>
+                            <constraint firstItem="rel-r6-1AF" firstAttribute="bottom" secondItem="1fA-Jo-46N" secondAttribute="bottom" constant="60" id="EqL-3Z-VTD"/>
                             <constraint firstItem="xoi-hx-Sp5" firstAttribute="leading" secondItem="QHE-P4-zgF" secondAttribute="leading" id="KRn-n5-rTo"/>
+                            <constraint firstItem="jbE-qa-GLY" firstAttribute="trailing" secondItem="QHE-P4-zgF" secondAttribute="trailing" id="MP6-LF-4kO"/>
                             <constraint firstItem="xoi-hx-Sp5" firstAttribute="centerX" secondItem="Bu4-xv-ztF" secondAttribute="centerX" id="Uvb-Ts-Ugv"/>
+                            <constraint firstItem="1fA-Jo-46N" firstAttribute="trailing" secondItem="QHE-P4-zgF" secondAttribute="trailing" id="WZK-CU-UGu"/>
+                            <constraint firstItem="1fA-Jo-46N" firstAttribute="leading" secondItem="QHE-P4-zgF" secondAttribute="leading" id="XKW-hQ-WOw"/>
                             <constraint firstItem="xoi-hx-Sp5" firstAttribute="trailing" secondItem="QHE-P4-zgF" secondAttribute="trailing" id="Xb1-N5-j9w"/>
+                            <constraint firstItem="jbE-qa-GLY" firstAttribute="leading" secondItem="QHE-P4-zgF" secondAttribute="leading" id="Zx5-j4-K0f"/>
                             <constraint firstItem="QHE-P4-zgF" firstAttribute="trailing" secondItem="jbE-qa-GLY" secondAttribute="trailing" id="aDw-Nh-Gil"/>
                             <constraint firstItem="rel-r6-1AF" firstAttribute="bottom" secondItem="jbE-qa-GLY" secondAttribute="bottom" constant="146" id="b3M-AZ-to8"/>
                             <constraint firstItem="xoi-hx-Sp5" firstAttribute="leading" secondItem="rel-r6-1AF" secondAttribute="leading" constant="37" id="dRw-Pc-UMK"/>
@@ -90,6 +104,7 @@
                         <outlet property="imageView" destination="xoi-hx-Sp5" id="rBN-yP-gNT"/>
                         <outlet property="jobLabel" destination="jbE-qa-GLY" id="Irj-yH-9Ng"/>
                         <outlet property="nameLabel" destination="QHE-P4-zgF" id="FWZ-eb-0A0"/>
+                        <outlet property="quoteLabel" destination="1fA-Jo-46N" id="WD9-XW-7LV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3yD-i0-nf1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
